@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "75a4b956-8f38-4b9b-bb8c-12247ad148d1",
+		"name": "mensagens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44359034",
+		"_collection_link": "https://ryan-6148071.postman.co/workspace/api-mensagens~9ff62f37-e13d-454a-b99b-55f01357a0a9/collection/44359034-75a4b956-8f38-4b9b-bb8c-12247ad148d1?action=share&source=collection_link&creator=44359034"
+	},
+	"item": [
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Github-Token",
+						"value": "ghu_DEfwqL6L8upWOLSd4evMGCiwsmhqCp3IzAgG",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://potential-garbanzo-45gv6gqvgg7cq46v-3000.app.github.dev/mensagens",
+					"protocol": "https",
+					"host": [
+						"potential-garbanzo-45gv6gqvgg7cq46v-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Github-Token",
+						"value": "ghu_DEfwqL6L8upWOLSd4evMGCiwsmhqCp3IzAgG",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conteudo\":\"Nova mensagem\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://potential-garbanzo-45gv6gqvgg7cq46v-3000.app.github.dev/mensagens",
+					"protocol": "https",
+					"host": [
+						"potential-garbanzo-45gv6gqvgg7cq46v-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar mensagem",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-Github-Token",
+						"value": "ghu_DEfwqL6L8upWOLSd4evMGCiwsmhqCp3IzAgG",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"conteudo\":\"Mensagem alterada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://potential-garbanzo-45gv6gqvgg7cq46v-3000.app.github.dev/mensagens/1",
+					"protocol": "https",
+					"host": [
+						"potential-garbanzo-45gv6gqvgg7cq46v-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"mensagens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-Github-Token",
+						"value": "ghu_DEfwqL6L8upWOLSd4evMGCiwsmhqCp3IzAgG",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://potential-garbanzo-45gv6gqvgg7cq46v-3000.app.github.dev/mensagens/1",
+					"protocol": "https",
+					"host": [
+						"potential-garbanzo-45gv6gqvgg7cq46v-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"mensagens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
